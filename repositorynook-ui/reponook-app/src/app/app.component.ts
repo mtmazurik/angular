@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'app';
 
-  test=()=>{ alert("hi"); }
+export class AppComponent {
+  navItems: any[] = [
+    { path: '/home', title: 'Home'},
+  ]
+
+  popupItems: any[] = [
+    { path: '/config' }
+  ]
+
+  events: string[] = [];
+  opened: boolean;
 }
